@@ -59,7 +59,7 @@ export class TodoService {
         let headers = new Headers({ "Content-type": "application/json" });
         let options = new RequestOptions({ headers });
 
-        let url = `${this.apiUrl}/${todos.id}`;
+        let url = `${this.apiUrl}/${todo.id}`;
 
         return this.http.delete(url, options)
                         .toPromise()
